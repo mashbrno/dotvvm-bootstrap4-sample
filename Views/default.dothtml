@@ -1,0 +1,7 @@
+﻿@viewModel DotVVM4.ViewModels.BaseViewModel, DotVVM4
+@masterPage Views/MasterPage.dotmaster
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    Hello
+
+</dot:Content>
