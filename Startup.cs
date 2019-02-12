@@ -21,14 +21,7 @@ namespace DotVVM4
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
             app.UseDotVVM<DotvvmStartup>();
-
-            app.Run(async (context) => { await context.Response.WriteAsync("Hello World!"); });
         }
     }
 }

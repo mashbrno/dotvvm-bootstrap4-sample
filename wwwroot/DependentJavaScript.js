@@ -1,0 +1,1 @@
+﻿console.log("My dependent javascript was loaded in a correct order.");

@@ -9,14 +9,20 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
 
-    <title>Title hiir</title>
+    <title>{{resource: Title}}</title>
 </head>
 <body>
-    <dot:ContentPlaceHolder ID="MainContent" />
-
-    @RenderSection("ViewSpecificJavascript", required: false)
+    <%-- HERE IS YOUR JAVASCRIPT REGISTRATION FOR ALL PAGES THAT ARE BASED ON THIS MASTER PSAGE --%>
+    <dot:RequiredResource Name="my-javascript" />
+    <bs:Container Type="Normal">
+        <h1>
+            My app: {{value: Title}}
+        </h1>
+        <p>
+            <dot:RouteLink RouteName="Default" Text="Default" Type="Link" /> |
+            <dot:RouteLink RouteName="Index" Text="Index" Type="Link" />
+        </p>
+        <dot:ContentPlaceHolder ID="MainContent" />
+    </bs:Container>
 </body>
-
-
-
 </html>

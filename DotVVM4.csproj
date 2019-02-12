@@ -5,13 +5,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="wwwroot\" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageReference Include="DotVVM.AspNetCore" Version="2.0.0" />
+        <PackageReference Include="DotVVM.AspNetCore" Version="2.1.0" />
         <PackageReference Include="Microsoft.AspNetCore.App" />
-        <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
         <PackageReference Include="DotVVM.Controls.Bootstrap4" Version="2.0.0-preview02-final-trial" />
     </ItemGroup>
 
