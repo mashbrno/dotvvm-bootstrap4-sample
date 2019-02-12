@@ -1,0 +1,6 @@
+@viewModel  DotVVM4.ViewModels.IndexViewModel, DotVVM4
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    This is index page content.
+</dot:Content>

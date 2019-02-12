@@ -1,7 +1,16 @@
-﻿@viewModel DotVVM4.ViewModels.BaseViewModel, DotVVM4
+﻿@viewModel DotVVM4.ViewModels.DefaultViewModel, DotVVM4
 @masterPage Views/MasterPage.dotmaster
 <dot:Content ContentPlaceHolderID="MainContent">
 
-    Hello
 
+    <%-- HERE IS YOUR JAVASCRIPT REGISTRATION FOR THIS PAGE --%>
+    <dot:RequiredResource Name="dependent-javascript" />
+    
+    
+    <bs:Alert Text="{value:  AlertText}" />
+    
+    <p>This is default page.</p>
+    <p>
+        <bs:Button Click="{command: ShowAlert()}" Text="Show Alert" />
+    </p>
 </dot:Content>
